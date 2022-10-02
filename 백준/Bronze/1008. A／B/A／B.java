@@ -8,8 +8,7 @@ public class Main {
 		int b = scan.nextInt();
 		
 		if (a > 0 && b < 10) {
-			System.out.println((double)a / b);
+			System.out.println((double)a / (double)b);
 		}
-	}
-
+    }
 }
