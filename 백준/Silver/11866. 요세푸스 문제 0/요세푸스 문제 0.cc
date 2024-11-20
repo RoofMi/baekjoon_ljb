@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-	int list[100001] = { 0, };
+	int list[1001] = { 0, };
 	int N, K;
 	cin >> N >> K;
 
