@@ -6,7 +6,8 @@ using namespace std;
 int main()
 {
 	int L;
-	unsigned int sum = 0;
+	long long sum = 0;
+	long long r = 1;
 	string str;
 
 	cin >> L;
@@ -14,7 +15,8 @@ int main()
 
 	for (int i = 0; i < str.length(); i++)
 	{
-		unsigned int temp = (str.at(i) - 96) * pow(31, i);
+		long long temp = (str.at(i) - 96) * r;
+		r = (r * 31) % 1234567891;
 		sum += temp % 1234567891;
 	}
 
